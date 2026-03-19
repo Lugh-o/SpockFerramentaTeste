@@ -6,7 +6,7 @@ import com.ucsal.repository.BonusRepositoryImplementado;
 import com.ucsal.service.CalculadoraNotaService;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
 
         BonusRepository repo = new BonusRepositoryImplementado();
 
