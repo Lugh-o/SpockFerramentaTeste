@@ -6,8 +6,8 @@
 
 ## 2. Clonar
 ```
-git clone <repo>
-cd <repo>
+git clone git@github.com:Lugh-o/SpockFerramentaTeste.git
+cd [pasta-onde-foi-feito-o-clone]
 ```
 
 
