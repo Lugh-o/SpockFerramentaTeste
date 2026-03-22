@@ -10,7 +10,6 @@ git clone git@github.com:Lugh-o/SpockFerramentaTeste.git
 cd [pasta-onde-foi-feito-o-clone]
 ```
 
-
 ## 3. Build
 
 Linux:
@@ -23,7 +22,20 @@ Windows:
 gradlew build
 ```
 
-## 4. Testes
+## 4. Executar
+
+Linux:
+```
+./gradlew run
+```
+
+Windows:
+```
+gradlew run
+```
+
+
+## 5. Testes
 
 Linux:
 ```

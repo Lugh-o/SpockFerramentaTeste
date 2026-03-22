@@ -1,14 +1,15 @@
 plugins {
     id 'java'
     id 'groovy'
+    id 'application'
 }
 
 group = 'com.ucsal'
-version = '1.0-SNAPSHOT'
+version = '1.0'
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(11)
     }
 }
 
@@ -17,10 +18,14 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.apache.groovy:groovy:4.0.21'
-    testImplementation 'org.spockframework:spock-core:2.4-groovy-5.0'
-    testImplementation 'net.bytebuddy:byte-buddy:1.14.12'
+    implementation 'org.apache.groovy:groovy:4.0.21'
+    testImplementation 'org.spockframework:spock-core:2.4-groovy-4.0'
+    testImplementation 'org.mockito:mockito-core:5.23.0'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+application {
+    mainClass = 'com.ucsal.app.Main'
 }
 
 test {
