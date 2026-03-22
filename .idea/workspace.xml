@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396e6b97-aa39-43b1-bdc5-c55c583c00f4" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-    </list>
+    <list default="true" id="396e6b97-aa39-43b1-bdc5-c55c583c00f4" name="Changes" comment="[build]: adaptado para jvm 11+" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,18 +37,13 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SpockFerramentaTeste" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SpockFerramentaTeste" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SpockFerramentaTeste" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SpockFerramentaTeste" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -94,33 +82,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.CalculadoraNotaServiceTest.calcula nota com bonus.executor": "Run",
-    "Gradle.CalculadoraNotaServiceTest.executor": "Run",
-    "Gradle.CalculadoraNotaSpec.executor": "Run",
-    "Gradle.CalculadoraNotaSpec.spy usando implementacao real.executor": "Run",
-    "Gradle.SpockFerramentaTeste [:com.ucsal.Main.main()].executor": "Run",
-    "Gradle.SpockFerramentaTeste [:com.ucsal.app.Main.main()].executor": "Run",
-    "Gradle.SpockFerramentaTeste [build].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "Spock",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Spock": "spock.lang.Specification",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.28045976",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.CalculadoraNotaServiceTest.calcula nota com bonus.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalculadoraNotaServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalculadoraNotaSpec.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalculadoraNotaSpec.spy usando implementacao real.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpockFerramentaTeste [:com.ucsal.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpockFerramentaTeste [:com.ucsal.app.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpockFerramentaTeste [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpockFerramentaTeste [run].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;Spock&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Spock&quot;: &quot;spock.lang.Specification&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.28045976&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="spock.lang.Specification" />
@@ -129,7 +118,7 @@
       <recent name="com.ucsal.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SpockFerramentaTeste [run]">
+  <component name="RunManager" selected="Gradle.CalculadoraNotaServiceTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ucsal.app.Main" />
       <module name="SpockFerramentaTeste.main" />
@@ -260,8 +249,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SpockFerramentaTeste [run]" />
         <item itemvalue="Gradle.CalculadoraNotaServiceTest" />
+        <item itemvalue="Gradle.SpockFerramentaTeste [run]" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.SpockFerramentaTeste [build]" />
         <item itemvalue="Gradle.CalculadoraNotaServiceTest.calcula nota com bonus" />
@@ -284,7 +273,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773949765138</updated>
       <workItem from="1774173081251" duration="75000" />
-      <workItem from="1774173290328" duration="2018000" />
+      <workItem from="1774173290328" duration="2118000" />
     </task>
     <task id="LOCAL-00001" summary="gohorse">
       <option name="closed" value="true" />
@@ -302,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773952399298</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[build]: adaptado para jvm 11+">
+      <option name="closed" value="true" />
+      <created>1774184417886</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1774184417886</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +320,7 @@
     <MESSAGE value="projeto" />
     <MESSAGE value="gohorse" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="[build]: adaptado para jvm 11+" />
+    <option name="LAST_COMMIT_MESSAGE" value="[build]: adaptado para jvm 11+" />
   </component>
 </project>
