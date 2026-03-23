@@ -2,7 +2,7 @@
 
 ## 1. Pré-requisitos
 
-- Instalar Java (JDK 21 ou superior)
+- Instalar Java (JDK 11 ou superior)
 
 ## 2. Clonar
 ```
