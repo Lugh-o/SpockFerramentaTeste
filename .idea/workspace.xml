@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396e6b97-aa39-43b1-bdc5-c55c583c00f4" name="Changes" comment="[build]: adaptado para jvm 11+" />
+    <list default="true" id="396e6b97-aa39-43b1-bdc5-c55c583c00f4" name="Changes" comment="[test]: log dos testes passados">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,6 +95,7 @@
     &quot;Gradle.SpockFerramentaTeste [:com.ucsal.app.Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SpockFerramentaTeste [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SpockFerramentaTeste [run].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SpockFerramentaTeste [test].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -118,7 +122,7 @@
       <recent name="com.ucsal.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CalculadoraNotaServiceTest">
+  <component name="RunManager" selected="Gradle.SpockFerramentaTeste [run]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ucsal.app.Main" />
       <module name="SpockFerramentaTeste.main" />
@@ -146,33 +150,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.ucsal.service.CalculadoraNotaServiceTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <GradleProfilingDisabled>false</GradleProfilingDisabled>
-      <GradleCoverageDisabled>false</GradleCoverageDisabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CalculadoraNotaServiceTest.calcula nota com bonus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.ucsal.service.CalculadoraNotaServiceTest.calcula nota com bonus&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -236,6 +213,31 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
+    <configuration name="SpockFerramentaTeste [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SpockFerramentaTeste.src.test" />
       <method v="2">
@@ -249,19 +251,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CalculadoraNotaServiceTest" />
         <item itemvalue="Gradle.SpockFerramentaTeste [run]" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.SpockFerramentaTeste [test]" />
         <item itemvalue="Gradle.SpockFerramentaTeste [build]" />
-        <item itemvalue="Gradle.CalculadoraNotaServiceTest.calcula nota com bonus" />
+        <item itemvalue="Gradle.CalculadoraNotaServiceTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
       </set>
     </attachedChunks>
   </component>
@@ -274,6 +276,8 @@
       <updated>1773949765138</updated>
       <workItem from="1774173081251" duration="75000" />
       <workItem from="1774173290328" duration="2118000" />
+      <workItem from="1774184784786" duration="363000" />
+      <workItem from="1774382398334" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="gohorse">
       <option name="closed" value="true" />
@@ -299,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774184417886</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[test]: log dos testes passados">
+      <option name="closed" value="true" />
+      <created>1774184954715</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1774184954715</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +333,7 @@
     <MESSAGE value="gohorse" />
     <MESSAGE value="fix" />
     <MESSAGE value="[build]: adaptado para jvm 11+" />
-    <option name="LAST_COMMIT_MESSAGE" value="[build]: adaptado para jvm 11+" />
+    <MESSAGE value="[test]: log dos testes passados" />
+    <option name="LAST_COMMIT_MESSAGE" value="[test]: log dos testes passados" />
   </component>
 </project>
